@@ -1,0 +1,169 @@
+*{
+  margin: 0
+
+}
+#navbar{
+position: fixed;
+ background: #F3CFC6;
+ padding: 20px;
+ width: 100vw;
+
+}
+#navbar ul{
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+
+}
+#navbar li{
+padding-right: 50px;
+font-size: 1.5rem;
+
+}
+#welcome-section{
+  height: 100vh;
+  background: black;
+
+}
+.hero{
+padding-top: 30vh;
+
+}
+.hero h1{
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: -10px;
+  color: white;
+
+
+}
+.hero p{
+  font-size: 2rem;
+  text-align: center;
+  color: white;
+}
+#projects h1{
+  text-align: center;
+  font-size: 2rem;
+}
+#projects hr{
+  width: 50vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+#projects{
+  text-align: center;
+  background: #f1f9ec;
+
+
+}
+#project-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 10px;
+        grid-template-areas: "tribute survey"
+                             "product documentation";
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+.tribute{
+  display: grid;
+  grid-area: tribute;
+}
+.survey{
+  display: grid;
+  grid-area: survey;
+
+}
+.product{
+  display: grid;
+  grid-area: product;
+}
+.documentation{
+  display: grid;
+  grid-area: documentation;
+}
+.project-tile{
+  margin-left: 68px;
+  margin-right: 68px;
+  background: #F3CFC6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border: none;
+}
+img{
+  display: block;
+  width: 100%;
+}
+
+.project-image{
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+.project-title{
+  padding: 15px 5px;
+  font-size: 1.5rem;
+}
+button{
+  background: #F3CFC6;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#contact{
+  padding-top: 100px;
+  background: #dee3de;
+
+}
+#contact h1{
+  font-size: 2.5rem;
+  text-align: center;
+}
+#contact p{
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#contact a{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-right: 40px;
+}
+#contact div{
+  text-align: center;
+  padding-bottom: 100px;
+}
+footer{
+  text-align: right;
+  padding: 20px;
+  font-size: 1.5rem;
+  background: #F3CFC6;
+}
+@media (max-width:800px) {
+  #project-cards{
+    display: block;
+  }
+  .project-tile{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .project-title{
+    margin-top: -30px ;
+    font-size: 1.5rem;
+  }
+  #contact a{
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 15px;
+
+  }
+
+}
